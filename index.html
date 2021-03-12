@@ -1,0 +1,2499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technical Questions</title>
+  </head>
+  <body>
+    <h1>Technical Interview Questions</h3>
+    <div class="faq-container">
+      <div class="faq active">
+        <h3 class="faq-title">
+          What does a doctype do?
+        </h3>
+
+        <p class="faq-text">
+          Doctype stands for Document Type Declaration. It informs the web browser about the type and version of HTML used in building the web document. This helps the browser to handle and load it properly. Instruct the browser to render the page.
+        </p>
+
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          How do you serve a page with content in multiple languages?
+        </h3>
+        <p class="faq-text">
+          The Accept-Language request HTTP header advertises which languages the client is able to understand, and which locale variant is preferred.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What kind of things must you be wary of when you design or develop for multilingual sites?
+        </h3>
+        <p class="faq-text">
+          Machine Translation: Text translation. <br> Language Options Misplacement: Make Language Options obvious. <br> No Culture Awareness: Research to avoid this problem. <br> Content  Organization: Writing system direction. <br> Encoding and Special Characters: UTF-8. <br> Duplicate Content: Duplicate content issues occur when someone forgets to translate all the web page elements and content, so they remain written in the source language, which Google sees as duplicate content and then penalizes your page for it. Pick a preferred language.<br> Dates and Orthography: Pick a universal one for your target country. <br> No word of SEO: Hire an SEO Agency.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What are data- attributes good for?
+        </h3>
+        <p class="faq-text">
+          Allow us to store extra information on standard, semantic HTML elements without other hacks such as non-standard attributes, extra properties on DOM, or Node.setUserData().
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Consider HTML5 as an open web platform. What are the building blocks of HTML5?
+        </h3>
+        <p class="faq-text">
+          More semantic text markup <br> New form elements <br> Video and Audio <br> New javascript API <br> Canvas and SVG <br> New Communication API <br> Geolocation API<br> Web Worker API <br> New Data Storage.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Describe the difference between a cookie, sessionStorage and localStorage.
+        </h3>
+        <p class="faq-text">
+          Now there are such way to keep data on front-end side.<br>
+          HTML5 web storage <br>
+          HTML5 local Storage <br>
+          HTML5 session storage <br>
+          HTML5 web database <br>
+          localStorage: stores data with no expiration date sessionStorage - stores data for one session <br>
+          HTML5 web storage: generic umbrella term for the new client-side data storage options: <br>
+          Web Storage is more secure and faster. The data is not included with every server request, but used ONLY when asked for. It is also possible to store large amounts of data, without affecting the website's performance. <br>
+          Local Storage: persistant and scoped to the domain(store data with no expiration date). At the moment two flavors are usually mentioned: <br>
+          'default': stores things in name/value pairs. <br>
+          Web SQL (aka Web Database): uses a SQL database. <br>
+          Session Storage: non persistent and scoped only to the current window(stores data for one session) <br>
+          Cookies: the old school way of doing all of the above. Stores name/value pairs per domain.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Describe the difference between script, script async and script defer.
+        </h3>
+        <p class="faq-text">
+          script: used to define a client-side script. <br>
+          script async: if async is present: The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing) If async is not present and defer is present: The script is executed when the page has finished parsing. <br>
+          script defer: The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Why is it generally a good idea to position CSS links between head /head and JS scripts just before /body? Do you know any exceptions?
+        </h3>
+        <p class="faq-text">
+          Placing links in the head: Putting links in the head is part of the specification. Besides that, placing at the top allows the page to render progressively which improves user experience. The problem with putting stylesheets near the bottom of the document is that it prohibits progressive rendering in many browsers, including Internet Explorer. Some browsers block rendering to avoid having to repaint elements of the page if their styles change. The user is stuck viewing a blank white page. It prevents the flash of unstyled contents.<br>
+          Placing scripts just before /body: scripts block HTML parsing while they are being downloaded and executed. Downloading the scripts at the bottom will allow the HTML to be parsed and displayed to the user first.<br>
+          An exception for positioning of scripts at the bottom is when your script contains document.write(), but these days it's not a good practice to use document.write(). Also, placing scripts at the bottom means that the browser cannot start downloading the scripts until the entire document is parsed. One possible workaround is to put script in the head and use the defer attribute. </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What is progressive rendering?
+        </h3>
+        <p class="faq-text">
+          Progressive rendering is the name given to techniques used to improve performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.<br>
+          It used to be much more prevalent in the days before broadband internet but it is still useful in modern development as mobile data connections are becoming increasingly popular (and unreliable)! <br>
+          Examples of such techniques: <br>
+          Lazy loading of images: Images on the page are not loaded all at once. JavaScript will be used to load an image when the user scrolls into the part of the page that displays the image.<br>
+          Prioritizing visible content (or above-the-fold rendering): Include only the minimum CSS/content/scripts necessary for the amount of page that would be rendered in the users browser first to display as quickly as possible, you can then use deferred scripts or listen for the DOMContentLoaded/load event to load in other resources and content. <br>
+          Async HTML fragments: Flushing parts of the HTML to the browser as the page is constructed on the back end.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
+        </h3>
+        <p class="faq-text">
+          You would use the srcset attribute when you want to serve different images to users depending on their device display width - serve higher quality images to devices with retina display enhances the user experience while serving lower resolution images to low-end devices increase performance and decrease data wastage (because serving a larger image will not have any visible difference). <br> For example: <br> img srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 2000w" src="..." alt="" tells the browser to display the small, medium or large .jpg graphic depending on the client's resolution. The first value is the image name and the second is the width of the image in pixels. For a device width of 320px, the following calculations are made: <br>
+          500 / 320 = 1.5625 <br>
+          1000 / 320 = 3.125 <br>
+          2000 / 320 = 6.25 <br>
+          If the client’s resolution is 1x, 1.5625 is the closest, and 500w corresponding to small.jpg will be selected by the browser. <br>
+          If the resolution is retina (2x), the browser will use the closest resolution above the minimum. Meaning it will not choose the 500w (1.5625) because it is greater than 1 and the image might look bad. The browser would then choose the image with a resulting ratio closer to 2 which is 1000w (3.125). <br>
+          srcsets solve the problem whereby you want to serve smaller image files to narrow screen devices, as they don't need huge images like desktop displays do — and also optionally that you want to serve different resolution images to high density/low-density screens.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Have you used different HTML templating languages before?
+        </h3>
+        <p class="faq-text">
+           No, but most templating engines will also allow you to inject your own filters in the event you need custom processing before display.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is CSS selector specificity and how does it work?
+        </h3>
+        <p class="faq-text">
+          Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.<br>
+          How is specificity calculated? Specificity is a weight that is applied to a given CSS declaration, determined by the number of each selector type in the matching selector. When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element. Specificity only applies when the same element is targeted by multiple declarations. As per CSS rules, directly targeted elements will always take precedence over rules which an element inherits from its ancestor.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+        </h3>
+        <p class="faq-text">
+          CSS resets aim to remove all built-in browser styling. Standard elements like H1-6, p, strong, em, et cetera end up looking exactly alike, having no decoration at all. You're then supposed to add all decoration yourself.<br>
+          Normalize CSS aims to make built-in browser styling consistent across browsers. Elements like H1-6 will appear bold, larger et cetera in a consistent way across browsers. You're then supposed to add only the difference in decoration your design needs.<br>
+          I would use normalize because gives developers a safe starting point at which to know styles are the same across browsers.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Describe floats and how they work.
+        </h3>
+        <p class="faq-text">
+          The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Describe z-index and how stacking context is formed.
+        </h3>
+        <p class="faq-text">
+        The stacking context:
+        The stacking context is a three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user, who is assumed to be facing the viewport or the webpage. HTML elements occupy this space in priority order based on element attributes.<br>
+        The stacking context: Using z-index, the rendering order of certain elements is influenced by their z-index value. This occurs because these elements have special properties which cause them to form a stacking context.A stacking context is formed, anywhere in the document, by any element in the following scenarios:
+        Root element of the document (html).<br>
+        Element with a position value absolute or relative and z-index value other than auto. <br>
+        Element with a position value fixed or sticky (sticky for all mobile browsers, but not older desktop). <br>
+        Element that is a child of a flex container, with z-index value other than auto. <br>
+        Element that is a child of a grid container, with z-index value other than auto. <br>
+        Element with a opacity value less than 1. <br>
+        Element with a mix-blend-mode value other than normal. <br>
+        Element with any of the following properties with value other than none: <br>
+        transform <br>
+        filter <br>
+        perspective <br>
+        clip-path <br>
+        mask / mask-image / mask-border <br>
+        Element with a isolation value isolate. <br>
+        Element with a -webkit-overflow-scrolling value touch. <br>
+        Element with a will-change value specifying any property that would create a stacking context on non-initial value (see this post). <br>
+        Element with a contain value of layout, or paint, or a composite value that includes either of them (i.e. contain: strict, contain: content). <br>
+        Within a stacking context, child elements are stacked according to the same rules previously explained. Importantly, the z-index values of its child stacking contexts only have meaning in this parent. Stacking contexts are treated automically as a single unit in the parent stacking context. <br>
+        In summary: <br>
+        Stacking contexts can be contained in other stacking contexts, and together create a hierarchy of stacking contexts. <br>
+        Each stacking context is completely independent of its siblings: only descendant elements are considered when stacking is processed. <br>
+        Each stacking context is self-contained: after the element's contents are stacked, the whole element is considered in the stacking order of the parent stacking context. <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Describe BFC (Block Formatting Context) and how it works.
+        </h3>
+        <p class="faq-text">
+          A block formatting context is a part of a visual CSS rendering of a web page. It's the region in which the layout of block boxes occurs and in which floats interact with other elements. <br>
+          A block formatting context is created by at least one of the following: <br>
+          The root element of the document (html). <br>
+          Floats (elements where float isn't none). <br>
+          Absolutely positioned elements (elements where position is absolute or fixed).<br>
+          Table cells (elements with display: table-cell, which is the default for HTML table cells).<br>
+          Inline-blocks (elements with display: inline-block).<br>
+          Table captions (elements with display: table-caption, which is the default for HTML table captions).<br>
+          Anonymous table cells implicitly created by the elements with display: table, table-row, table-row-group, table-header-group, table-footer-group (which is the default for HTML tables, table rows, table bodies, table headers, and table footers, respectively), or inline-table.<br>
+          Block elements where overflow has a value other than visible and clip.<br>
+          display: flow-root.<br>
+          Elements with contain: layout, content, or paint.<br>
+          Flex items (direct children of the element with display: flex or inline-flex) if they are neither flex nor grid nor table containers themselves.<br>
+          Grid items (direct children of the element with display: grid or inline-grid) if they are neither flex nor grid nor table containers themselves.<br>
+          Multicol containers (elements where column-count or column-width isn't auto, including elements with column-count: 1).<br>
+          column-span: all should always create a new formatting context, even when the column-span: all element isn't contained by a multicol container (Spec change, Chrome bug).<br>
+          Formatting contexts affect layout, but typically, we create a new block formatting context for the positioning and clearing floats rather than changing the layout, because an element that establishes a new block formatting context will:<br>
+          Contain internal floats.<br>
+          Exclude external floats.<br>
+          Suppress margin collapsing.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the various clearing techniques and which is appropriate for what context?
+        </h3>
+        <p class="faq-text">
+          Empty div method: div style="clear:both;"/div. <br>
+          Clearfix method: Refer to the .clearfix class above. <br>
+          overflow: auto or overflow: hidden method — Parent will establish a new block formatting context and expand to contains its floated children. <br>
+          In large projects, I would write a utility .clearfix class and use them in places where I need it. overflow: hidden might clip children if the children is taller than the parent and is not very ideal. <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain CSS sprites, and how you would implement them on a page or site.
+        </h3>
+        <p class="faq-text">
+          CSS sprites combine multiple images into one single larger image. It is commonly used technique for icons (Gmail uses it). <br> How to implement it:
+          Use a sprite generator that packs multiple images into one and generate the appropriate CSS for it.<br>
+          Each image would have a corresponding CSS class with background-image, background-position and background-size properties defined.<br>
+          To use that image, add the corresponding class to your element.<br>
+          Advantages:<br>
+          Reduce the number of HTTP requests for multiple images (only one single request is required per spritesheet). But with HTTP2, loading multiple images is no longer much of an issue.<br>
+          Advance downloading of assets that won’t be downloaded until needed, such as images that only appear upon :hover pseudo-states. Blinking wouldn’t be seen.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How would you approach fixing browser-specific styling issues?
+        </h3>
+        <p class="faq-text">
+          After identifying the issue and the offending browser, use a separate style sheet that only loads when that specific browser is being used. This technique requires server-side rendering though. <br>
+          Use libraries like Bootstrap that already handles these styling issues for you. <br>
+          Use autoprefixer to automatically add vendor prefixes to your code. <br>
+          Use Reset CSS or Normalize.css.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?
+        </h3>
+        <p class="faq-text">
+          Graceful degradation — The practice of building an application for modern browsers while ensuring it remains functional in older browsers. <br>
+          Progressive enhancement — The practice of building an application for a base level of user experience, but adding functional enhancements when a browser supports it.
+          Use caniuse.com to check for feature support. <br>
+          Autoprefixer for automatic vendor prefix insertion. <br>
+          Feature detection using Modernizr.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the different ways to visually hide content (and make it available only for screen readers)?
+        </h3>
+        <p class="faq-text">
+          These techniques are related to accessibility. <br>
+          visibility: hidden. However the element is still in the flow of the page, and still takes up space. <br>
+          width: 0; height: 0. Make the element not take up any space on the screen at all, resulting in not showing it. <br>
+          position: absolute; left: -99999px. Position it outside of the screen. <br>
+          text-indent: -9999px. This only works on text within the block elements. <br>
+          Metadata. For example by using Schema.org, RDF and JSON-LD.
+          WAI-ARIA. A W3C technical specification that specifies how to increase the accessibility of web pages. <br>
+          Even if WAI-ARIA is the ideal solution, I would go with the absolute positioning approach, as it has the least caveats, works for most elements and it’s an easy technique.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+      Have you ever used a grid system, and if so, what do you prefer?
+        </h3>
+        <p class="faq-text">
+          Grid systems usually come with a myriad of sizing options, but the vast majority of the time you just want two or three elements side-by-side. Given this, why should we be required to put sizing classes on every single cell? <br>
+          Listed below are some of my criteria for an ideal grid system. Fortunately, with Flexbox we get most of these features for free. <br>
+          By default, each grid cell is the same width and height as every other cell in the row. Basically they all size to fit by default. <br>
+          For finer control, you can add sizing classes to individual cells. Without these classes, the cells simply divide up the available space as usual. <br>
+          For responsive grids, you can add media query-specific classes to the cells. <br>
+          Individual cells can be aligned vertically to the top, bottom, or middle. <br>
+          When you want all of the cells in a grid to have the same sizing, media, or alignment values, you should be able to just add a single class to the container to avoid unnecessary repetition. <br>
+          Grids can be nested as many levels deep as needed. <br>
+          I prefer Flexbox.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Have you used or implemented media queries or mobile specific layouts/CSS?
+        </h3>
+        <p class="faq-text">
+          Yes.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Are you familiar with styling SVG?
+        </h3>
+        <p class="faq-text">
+          Yes.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Can you give an example of an @media property other than screen?
+        </h3>
+        <p class="faq-text">
+          all
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+      What are some of the "gotchas" for writing efficient CSS?
+        </h3>
+        <p class="faq-text">
+          Use efficient CSS selectors.<br>
+          Avoid a universal key selector.<br>
+          Allow elements to inherit from ancestors, or use a class to apply a style to multiple elements.<br>
+          Make your rules as specific as possible.<br>
+          Prefer class and ID selectors over tag selectors.<br>
+          Remove redundant qualifiers.<br>
+          These qualifiers are redundant:<br>
+          ID selectors qualified by class and/or tag selectors.<br>
+          Class selectors qualified by tag selectors (when a class is only used for one tag, which is a good design practice anyway).<br>
+          Avoid using descendant selectors, especially those that specify redundant ancestors.
+          For example, the rule body ul li a {...} specifies a redundant body selector, since all elements are descendants of the body tag.<br>
+          Use class selectors instead of descendant selectors.<br>
+          Avoid CSS expressions.<br>
+          Put CSS in the document head.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+      What are the advantages/disadvantages of using CSS preprocessors?
+        </h3>
+        <p class="faq-text">
+      What are the advantages/disadvantages of using CSS preprocessors? Option to add variables, mixins and functions for code reusability. <br>
+      Basic CSS is direct and offers less flexibility. With CSS Preprocessor, we can add variables and functions which facilitates easier and efficient development. It also makes our code more organised and clean.<br>
+      Hierarchy:<br>
+      With CSS preprocessors it is easy to group parent and child elements into modular blocks which allow us to manage code easily. It’s easier to write styles for nested components using preprocessor and also the code becomes easier to maintain.<br>
+      Easy to join multiple files.<br>
+      CSS Preprocessors offers a special functionality of joining multiple stylesheets into one. We can create different files for each screen or pages and then import them all in the main CSS file.<br>
+      After that, only the main file needs to be imported on the website and internal files will be read from the server.<br>
+      A major advantage of this approach is that multiple calls to the server for CSS files are avoided.<br>
+      Disadvantages of using CSS Preprocessors:<br>
+      Compilation takes longer time.<br>
+      Compilation times can be really slow, even when using the best tool, mainly because SASS compiler run every time we make file minor file changes. We know that feeling when live reload takes a lot of time while developing website mainly because every SASS file needs to be converted into CSS before the output can be shown on the browser.<br>
+      They can produce very large CSS files.<br>
+      Source files may be small, but the generated CSS could be huge which can increase time for the request to complete.<br>
+      Extra Tooling and developer inconvenience.<br>
+      CSS preprocessors require extra tooling and knowledge about using the preprocessor properly.<br> These preprocessors need to be understood and their corresponding libraries need to be maintained and upgraded from time to time.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Describe what you like and dislike about the CSS preprocessors you have used.
+        </h3>
+        <p class="faq-text">
+          Likes: <br>
+          Mostly the advantages mentioned above. <br>
+          Less is written in JavaScript, which plays well with Node.<br>
+          Dislikes: <br>
+          I use Sass via node-sass, which is a binding for LibSass written in C++. I have to frequently recompile it when switching between node versions. <br>
+          In Less, variable names are prefixed with @, which can be confused with native CSS keywords like @media, @import and @font-face rule.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How would you implement a web design comp that uses non-standard fonts?
+        </h3>
+        <p class="faq-text">
+          Webfonts (font services like: Google Webfonts, Typekit etc.) <br> Use @font-face and define font-family for different font-weights.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+      Explain how a browser determines what elements match a CSS selector.
+        </h3>
+        <p class="faq-text">
+          As the browser parses HTML, it constructs an internal document tree representing all the elements to be displayed. It then matches elements to styles specified in various stylesheets, according to the standard CSS cascade, inheritance, and ordering rules. In Mozilla's implementation (and probably others as well), for each element, the CSS engine searches through style rules to find a match. The engine evaluates each rule from right to left, starting from the rightmost selector (called the "key") and moving through each selector until it finds a match or discards the rule. (The "selector" is the document element to which the rule should apply.)
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Describe pseudo-elements and discuss what they are used for.
+        </h3>
+        <p class="faq-text">
+          A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). They can be used for decoration (:first-line, :first-letter) or adding elements to the markup (combined with content: ...) without having to modify the markup (:before, :after). <br>
+          :first-line and :first-letter can be used to decorate text.<br>
+          Used in the .clearfix hack as shown above to add a zero-space element with clear: both.<br>
+          Triangular arrows in tooltips use :before and :after. Encourages separation of concerns because the triangle is considered part of styling and not really the DOM. It’s not really possible to draw a triangle with just CSS styles without using an additional HTML element.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
+        </h3>
+        <p class="faq-text">
+          The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model. Each box has a content area (e.g. text, an image, etc.) and optional surrounding padding, border, and margin areas.<br>
+          The CSS box model is responsible for calculating:<br>
+          How much space a block element takes up.<br>
+          Whether or not borders and/or margins overlap, or collapse.<br>
+          A box’s dimensions.<br>
+          The box model has the following rules:<br>
+          The dimensions of a block element are calculated by width, height, padding, borders, and margins.<br>
+          If no height is specified, a block element will be as high as the content it contains, plus padding.<br>
+          If no width is specified, a non-floated block element will expand to fit the width of its parent minus padding.<br>
+          The height of an element is calculated by the content’s height.<br>
+          The width of an element is calculated by the content’s width.<br>
+          By default, paddings and borders are not part of the width and height of an element.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What does * { box-sizing: border-box; } do? What are its advantages?
+        </h3>
+        <p class="faq-text">
+          By default, elements have box-sizing: content-box applied, and only the content size is being accounted for.<br>
+          box-sizing: border-box changes how the width and height of elements are being calculated, border and padding are also being included in the calculation. <br>
+          The height of an element is now calculated by the content’s height + vertical padding + vertical borderwidth. <br>
+          The width of an element is now calculated by the content’s width + horizontal padding + horizontal borderwidth. <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the CSS display property and can you give a few examples of its use?
+        </h3>
+        <p class="faq-text">
+          The Display property in CSS defines how the components(div, hyperlink, heading, etc) are going to be placed on the web page. As the name suggests, this property is used to define the display of the different parts of a web page. <br>
+        Syntax:  <br>
+        display: value; <br>
+        Property values  <br>
+        inline: It is used to displays an element as an inline element. <br>
+        block: It is used to displays an element as a block element. <br>
+        contents: It is used to disappear the container. <br>
+        flex: It is used to display an element as a block-level flex container. <br>
+        grid: It is used to display an element as a block-level grid container. <br>
+        inline-block: It is used to display an element as an inline-level block container. <br>
+        inline-flex: It is used to display an element as an inline-level flex container.<br>
+        inline-grid: It is used to display an element as an inline-level grid container.<br>
+        inline-table: It is used to display an inline-level table. <br>
+        list-item: It is used to display all the elements in li element. <br>
+        run-in: It is used to display an element inline or block level, depending on the context. <br>
+        table: It is used to set the behavior as table for all elements. <br>
+        table-caption: It is used to set the behavior as caption for all elements. <br>
+        table-column-group: It is used to set the behavior as column for all elements. <br>
+        table-header-group: It is used to set the behavior as header for all elements.<br>
+        table-footer-group: It is used to set the behavior as footer for all elements. <br>
+        table-row-group: It is used to set the behavior as row for all elements. <br>
+        table-cell: It is used to set the behavior as td for all elements. <br>
+        table-column: It is used to set the behavior as col for all elements. <br>
+        table-row: It is used to set the behavior as tr for all elements. <br>
+        none: It is used to remove the element. <br>
+        initial: It is used to set the default value. <br>
+        inherit: It is used to inherit the property from it’s parents’ elements. <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What's the difference between inline and inline-block?
+        </h3>
+        <p class="faq-text">
+          Elements with display:inline-block are like display:inline elements, but they can have a width and a height. That means that you can use an inline-block element as a block while flowing it within text or other elements. <br>
+          Difference of supported styles as summary:<br>
+          inline: only margin-left, margin-right, padding-left, padding-right <br>
+          inline-block: margin, padding, height, width.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What's the difference between a relative, fixed, absolute and statically positioned element?
+        </h3>
+        <p class="faq-text">
+          A positioned element is an element whose computed position property is either relative, absolute, fixed or sticky.<br>
+          static: The default position; the element will flow into the page as it normally would. The top, right, bottom, left and z-index properties do not apply.<br>
+          relative: The element’s position is adjusted relative to itself, without changing layout (and thus leaving a gap for the element where it would have been had it not been positioned). <br>
+          absolute: The element is removed from the flow of the page and positioned at a specified position relative to its closest positioned ancestor if any, or otherwise relative to the initial containing block. Absolutely positioned boxes can have margins, and they do not collapse with any other margins. These elements do not affect the position of other elements.<br>
+          fixed: The element is removed from the flow of the page and positioned at a specified position relative to the viewport and doesn’t move when scrolled.<br>
+          sticky: Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold, at which point it is treated as fixed positioned.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
+        </h3>
+        <p class="faq-text">
+          Bootstrap: Slow release cycle. Bootstrap 4 has been in alpha for almost 2 years. Add a spinner button component, as it is widely-used.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Have you played around with the new CSS Flexbox or Grid specs?
+        </h3>
+        <p class="faq-text">
+          Yes. Flexbox is mainly meant for 1-dimensional layouts while Grid is meant for 2-dimensional layouts. <br>
+          Flexbox solves many common problems in CSS, such as vertical centering of elements within a container, sticky footer, etc. Bootstrap and Bulma are based on Flexbox, and it is probably the recommended way to create layouts these days. Have tried Flexbox before but ran into some browser incompatibility issues (Safari) in using flex-grow, and I had to rewrite my code using inline-blocks and math to calculate the widths in percentages, it wasn’t a nice experience.<br>
+          Grid is by far the most intuitive approach for creating grid-based layouts.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?
+        </h3>
+        <p class="faq-text">
+          Responsive web design is a term to describe the technique that makes a website automatically adjust based on the size of a users screen. This allows users to view a website no matter what size screen or device they are using. Responsive means you only need one website and you write the code for responding to different sizes in the CSS.<br>
+          Mobile first is an approach to a website that instead of designing a website to look good on a desktop computer, they take a more progressive approach and make a site to look good on a mobile device first before adapting it later to fit a desktop layout.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How is responsive design different from adaptive design?
+        </h3>
+        <p class="faq-text">
+          Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on. <br>
+          Responsive design works on the principle of flexibility — a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors. Like a single ball growing or shrinking to fit through several different hoops.<br>
+          Adaptive design is more like the modern definition of progressive enhancement. Instead of one flexible design, adaptive design detects the device and other features, and then provides the appropriate feature and layout based on a predefined set of viewport sizes and other characteristics. The site detects the type of device used, and delivers the pre-set layout for that device. Instead of a single ball going through several different-sized hoops, you’d have several different balls to use depending on the hoop size.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Have you ever worked with retina graphics? If so, when and what techniques did you use?
+        </h3>
+        <p class="faq-text">
+          I tend to use higher resolution graphics (twice the display size) to handle retina display. The better way would be to use a media query like @media only screen and (min-device-pixel-ratio: 2) { ... } and change the background-image. <br>
+          For icons, I would also opt to use svgs and icon fonts where possible, as they render very crisply regardless of resolution. <br>
+          Another method would be to use JavaScript to replace the img src attribute with higher resolution versions after checking the window.devicePixelRatio value.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?
+        </h3>
+        <p class="faq-text">
+          translate() is a value of CSS transform. Changing transform or opacity does not trigger browser reflow or repaint, only compositions, whereas changing the absolute positioning triggers reflow. Transform causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence translate() is more efficient and will result in shorter paint times for smoother animations. <br>
+          When using translate(), the element still takes up its original space (sort of like position: relative), unlike in changing the absolute positioning.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain event delegation.
+        </h3>
+        <p class="faq-text">
+          Event delegation is a technique involving adding event listeners to a parent element instead of adding them to the descendant elements. The listener will fire whenever the event is triggered on the descendant elements due to event bubbling up the DOM. The benefits of this technique are:<br>
+          Memory footprint goes down because only one single handler is needed on the parent element, rather than having to attach event handlers on each descendant.<br>
+          There is no need to unbind the handler from elements that are removed and to bind the event for new elements.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain how event delegation works in JavaScript.
+        </h3>
+        <p class="faq-text">
+          The value of this depends on how the function is called.<br>
+          If the new keyword is used when calling the function, this inside the function is a brand new object. <br>
+          If apply, call, or bind are used to call/create a function, this inside the function is the object that is passed in as the argument. <br>
+          If a function is called as a method, such as obj.method() — this is the object that the function is a property of. <br>
+          If a function is invoked as a free function invocation, meaning it was invoked without any of the conditions present above, this is the global object. In a browser, it is the window object. If in strict mode ('use strict'), this will be undefined instead of the global object.<br>
+          If multiple of the above rules apply, the rule that is higher wins and will set the this value. <br>
+          If the function is an ES2015 arrow function, it ignores all the rules above and receives the this value of its surrounding scope at the time it is created.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain how prototypal inheritance works.
+        </h3>
+        <p class="faq-text">
+          All JavaScript objects have a prototype property, that is a reference to another object. When a property is accessed on an object and if the property is not found on that object, the JavaScript engine looks at the object’s prototype, and the prototype‘s prototype and so on, until it finds the property defined on one of the prototypes or until it reaches the end of the prototype chain. This behaviour simulates classical inheritance, but it is really more of delegation than inheritance.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What do you think of AMD vs CommonJS?
+        </h3>
+        <p class="faq-text">
+          Both are ways to implement a module system, which was not natively present in JavaScript until ES2015 came along. CommonJS is synchronous while AMD (Asynchronous Module Definition) is obviously asynchronous. CommonJS is designed with server-side development in mind while AMD, with its support for asynchronous loading of modules, is more intended for browsers.<br>
+          I find AMD syntax to be quite verbose and CommonJS is closer to the style you would write to import statements in other languages. Most of the time, I find AMD unnecessary, because if you served all your JavaScript into one concatenated bundle file, you wouldn’t benefit from the async loading properties. Also, CommonJS syntax is closer to Node style of writing modules and there is less context-switching overhead when switching between client side and server side JavaScript development. <br>
+          I’m glad that with ES2015 modules, that has support for both synchronous and asynchronous loading, we can finally just stick to one approach. Although it hasn’t been fully rolled out in browsers and in Node, we can always use transpilers to convert our code.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain why the following doesn't work as an IIFE: function foo(){ }();. What needs to be changed to properly make it an IIFE?
+        </h3>
+        <p class="faq-text">
+          IIFE stands for Immediately Invoked Function Expressions. The JavaScript parser reads function foo(){ }(); as function foo(){ } and ();, where the former is a function declaration and the latter (a pair of brackets) is an attempt at calling a function but there is no name specified, hence it throws Uncaught SyntaxError: Unexpected token ). <br>
+          Here are two ways to fix it that involves adding more brackets: (function foo(){ })() and (function foo(){ }()). These functions are not exposed in the global scope and you can even omit its name if you do not need to reference itself within the body.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What's the difference between a variable that is: null, undefined or undeclared?
+        </h3>
+        <p class="faq-text">
+          undeclared variables don’t even exist <br>
+          undefined variables exist, but don’t have anything assigned to them<br>
+          null variables exist and have null assigned to them <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          How would you go about checking for any of these states: null, undefined or undeclared?
+        </h3>
+        <p class="faq-text">
+          undeclared variables: To check for them, wrap its usage in a try/catch block. <br>
+          undefined variables: To check for it, compare using the strict equality (===) operator or typeof which will give the 'undefined' string. Note that you should not be using the abstract equality operator to check, as it will also return true if the value is null.<br>
+          null variables: To check for null, simply compare using the strict equality operator. Note that like the above, you should not be using the abstract equality operator (==) to check, as it will also return true if the value is undefined.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What is a closure, and how/why would you use one?
+        </h3>
+        <p class="faq-text">
+          A closure is the combination of a function and the lexical environment within which that function was declared. The word «lexical» refers to the fact that lexical scoping uses the location where a variable is declared within the source code to determine where that variable is available. Closures are functions that have access to the outer (enclosing) function’s variables—scope chain even after the outer function has returned.<br>
+          Why would you use one? <br>
+          Data privacy / emulating private methods with closures. Commonly used in the  module pattern.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Can you describe the main difference between a .forEach loop and a .map() loop and why you would pick one versus the other?
+        </h3>
+        <p class="faq-text">
+          The main difference between .forEach and .map() is that .map() returns a new array. If you need the result, but do not wish to mutate the original array, .map() is the clear choice. If you simply need to iterate over an array, forEach is a fine choice.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What's a typical use case for anonymous functions?
+        </h3>
+        <p class="faq-text">
+          They can be used in IIFEs to encapsulate some code within a local scope so that variables declared in it do not leak to the global scope. As a callback that is used once and does not need to be used anywhere else. The code will seem more self-contained and readable when handlers are defined right inside the code calling them, rather than having to search elsewhere to find the function body. Arguments to functional programming constructs or Lodash (similar to callbacks).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How do you organize your code? (module pattern, classical inheritance?)
+        </h3>
+        <p class="faq-text">
+          Classical inheritance.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What's the difference between host objects and native objects?
+        </h3>
+        <p class="faq-text">
+          Native objects are objects that are part of the JavaScript language defined by the ECMAScript specification, such as String, Math, RegExp, Object, Function, etc. <br>
+          Host objects are provided by the runtime environment (browser or Node), such as window, XMLHTTPRequest, etc.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Difference between: function Person(){}, var person = Person(), and var person = new Person()?
+        </h3>
+        <p class="faq-text">
+          Technically speaking, function Person(){} is just a normal function declaration. The convention is use PascalCase for functions that are intended to be used as constructors. <br>
+          var person = Person() invokes the Person as a function, and not as a constructor. Invoking as such is a common mistake if it the function is intended to be used as a constructor. <br> Typically, the constructor does not return anything, hence invoking the constructor like a normal function will return undefined and that gets assigned to the variable intended as the instance. <br>
+          var person = new Person() creates an instance of the Person object using the new operator, which inherits from Person.prototype. An alternative would be to use Object.create, such as: Object.create(Person.prototype).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+      What's the difference between .call and .apply?
+        </h3>
+        <p class="faq-text">
+          Both .call and .apply are used to invoke functions and the first parameter will be used as the value of this within the function. However, .call takes in a comma-separated arguments as the next arguments while .apply takes in an array of arguments as the next argument. An easy way to remember this is C for call and comma-separated and A for apply and array of arguments.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain Function.prototype.bind.
+        </h3>
+        <p class="faq-text">
+          The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. <br>
+          In my experience, it is most useful for binding the value of this in methods of classes that you want to pass into other functions. This is frequently done in React components.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        When would you use document.write()?
+        </h3>
+        <p class="faq-text">
+          This only seems appropriate usage for document.write() is when working with third parties like Google Analytics and such for including their scripts. This is because document.write() is mostly available in any browser. Since third party companies have no control over the user’s browser dependencies (ex. jQuery), document.write() can be used as a fallback or a default method.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What's the difference between feature detection, feature inference, and using the UA string?
+        </h3>
+        <p class="faq-text">
+          Feature detection involves working out whether a browser supports a certain block of code, and running different code dependent on whether it does (or doesn’t), so that the browser can always provide a working experience rather than crashing/erroring in some browsers. <br>
+          Feature inference checks for a feature just like feature detection, but uses another function because it assumes it will also exist. <br>
+          UA String: This is a browser-reported string that allows the network protocol peers to identify the application type, operating system, software vendor or software version of the requesting software user agent. It can be accessed via navigator.userAgent. However, the string is tricky to parse and can be spoofed.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain Ajax in as much detail as possible.
+        </h3>
+        <p class="faq-text">
+          Ajax (asynchronous JavaScript and XML) is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows for web pages, and by extension web applications, to change content dynamically without the need to reload the entire page. In practice, modern implementations commonly substitute JSON for XML due to the advantages of being native to JavaScript. <br>
+          The XMLHttpRequest API is frequently used for the asynchronous communication or these days, the fetch API.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the advantages and disadvantages of using Ajax?
+        </h3>
+        <p class="faq-text">
+          Advantages: <br>
+          Better interactivity. New content from the server can be changed dynamically without the need to reload the entire page.<br>
+          Reduce connections to the server since scripts and stylesheets only have to be requested once. <br>
+          State can be maintained on a page. JavaScript variables and DOM state will persist because the main container page was not reloaded.
+          Basically most of the advantages of an SPA. <br>
+          Disadvantages: <br>
+          Dynamic webpages are harder to bookmark.<br>
+          Does not work if JavaScript has been disabled in the browser. <br>
+          Some webcrawlers do not execute JavaScript and would not see content that has been loaded by JavaScript.<br>
+          Basically most of the disadvantages of an SPA.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain how JSONP works (and how it's not really Ajax).
+        </h3>
+        <p class="faq-text">
+          JSONP (JSON with Padding) is a method commonly used to bypass the cross-domain policies in web browsers because Ajax requests from the current page to a cross-origin domain is not allowed. <br>
+          JSONP works by making a request to a cross-origin domain via a script tag and usually with a callback query parameter, for example: https://example.com?callback=printData. The server will then wrap the data within a function called printData and return it to the client. The client has to have the printData function in its global scope and the function will be executed by the client when the response from the cross-origin domain is received. <br>
+          JSONP can be unsafe and has some security implications. As JSONP is really JavaScript, it can do everything else JavaScript can do, so you need to trust the provider of the JSONP data. <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Have you ever used JavaScript templating? If so, what libraries have you used?
+        </h3>
+        <p class="faq-text">
+          No.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain "hoisting".
+        </h3>
+        <p class="faq-text">
+          Hoisting is a term used to explain the behavior of variable declarations in your code. Variables declared or initialized with the var keyword will have their declaration «hoisted» up to the top of the current scope. However, only the declaration is hoisted, the assignment (if there is one), will stay where it is. Function declarations have the body hoisted while the function expressions (written in the form of variable declarations) only has the variable declaration hoisted.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Describe event bubbling.
+        </h3>
+        <p class="faq-text">
+          When an event triggers on a DOM element, it will attempt to handle the event if there is a listener attached, then the event is bubbled up to its parent and the same thing happens. This bubbling occurs up the element’s ancestors all the way to the document. Event bubbling is the mechanism behind event delegation.<br>The idea of event delegation is simple. Instead of attaching the event listeners directly to the buttons, you delegate listening to the parent div id="buttons". When a button is clicked, the listener of the parent element catches the bubbling event.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What's the difference between an "attribute" and a "property"?
+        </h3>
+        <p class="faq-text">
+          When writing HTML source code, you can define attributes on your HTML elements. Then, once the browser parses your code, a corresponding DOM node will be created. This node is an object, and therefore it has properties.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Why is extending built-in JavaScript objects not a good idea?
+        </h3>
+        <p class="faq-text">
+          Extending a built-in/native JavaScript object means adding properties/functions to its prototype. While this may seem like a good idea at first, it is dangerous in practice. Imagine your code uses a few libraries that both extend the Array.prototype by adding the same contains method, the implementations will overwrite each other and your code will break if the behavior of these two methods are not the same. <br>
+         The only time you may want to extend a native object is when you want to create a polyfill, essentially providing your own implementation for a method that is part of the JavaScript specification but might not exist in the user’s browser due to it being an older browser.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Difference between document load event and document DOMContentLoaded event?
+        </h3>
+        <p class="faq-text">
+          The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+          The window‘s load event is only fired after the DOM and all dependent resources and assets have loaded.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the difference between == and ===?
+        </h3>
+        <p class="faq-text">
+          == is the abstract equality operator while === is the strict equality operator. <br>The == operator will compare for equality after doing any necessary type conversions. <br> The === operator will not do type conversion, so if two values are not the same type === will simply return false.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain the same-origin policy with regards to JavaScript.
+        </h3>
+        <p class="faq-text">
+          The same-origin policy prevents JavaScript from making requests across domain boundaries. An origin is defined as a combination of URI scheme, hostname, and port number. This policy prevents a malicious script on one page from obtaining access to sensitive data on another web page through that page’s Document Object Model.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Make this work: duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+        </h3>
+        <p class="faq-text">
+          function duplicate(arr){ <br>
+          return arr.concat(arr) <br>
+        } <br>
+          duplicate([1,2,3,4,5])
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Why is it called a Ternary expression, what does the word "Ternary" indicate?
+        </h3>
+        <p class="faq-text">
+          The conditional operator, which is perhaps a more meaningful name because it evaluates conditions like if does. Provided that the operator is used with care, it can make code more concise without sacrificing readability. Ternary indicates if:then.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is "use strict";? what are the advantages and disadvantages to using it?
+        </h3>
+        <p class="faq-text">
+          ‘use strict’ is a statement used to enable strict mode to entire scripts or individual functions. Strict mode is a way to opt in to a restricted variant of JavaScript.<br>
+          Advantages: <br>
+          Makes it impossible to accidentally create global variables. <br>
+          Makes assignments which would otherwise silently fail to throw an exception. <br>
+          Makes attempts to delete undeletable properties throw (where before the attempt would simply have no effect). <br>
+          Requires that function parameter names be unique. <br>
+          this is undefined in the global context. <br>
+          It catches some common coding bloopers, throwing exceptions. <br>
+          It disables features that are confusing or poorly thought out. <br>
+          Disadvantages: <br>
+          Many missing features that some developers might be used to. <br>
+          No more access to function.caller and function.arguments. <br>
+          Concatenation of scripts written in different strict modes might cause issues. <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
+        </h3>
+        <p class="faq-text">
+          for (let i = 1; i <= 100; i++) { <br>
+           let f = i % 3 == 0, b = i % 5 == 0 <br>
+           console.log(f ? b ? "FizzBuzz" : "Fizz" : b ? "Buzz" : i) <br>
+         }
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
+        </h3>
+        <p class="faq-text">
+           Every script has access to the global scope, and if everyone is using the global namespace to define their own variables, there will bound to be collisions. Use the module pattern (IIFEs) to encapsulate your variables within a local namespace.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
+        </h3>
+        <p class="faq-text">
+          The load event fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links and sub-frames have finished loading. To execute anything post document load, we fire these events. ‘DOMContentLoaded’ or jQuery’s loaded are other options. (Elaborate Later).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain what a single page app is and how to make one SEO-friendly.
+        </h3>
+        <p class="faq-text">
+          Web developers these days refer to the products they build as web apps, rather than websites. While there is no strict difference between the two terms, web apps tend to be highly interactive and dynamic, allowing the user to perform actions and receive a response for their action. Traditionally, the browser receives HTML from the server and renders it. When the user navigates to another URL, a full-page refresh is required and the server sends fresh new HTML for the new page. This is called server-side rendering. <br>
+          However in modern SPAs, client-side rendering is used instead. The browser loads the initial page from the server, along with the scripts (frameworks, libraries, app code) and stylesheets required for the whole app. When the user navigates to other pages, a page refresh is not triggered. The URL of the page is updated via the HTML5 History API. New data required for the new page, usually in JSON format, is retrieved by the browser via AJAX requests to the server. The SPA then dynamically updates the page with the data via JavaScript, which it has already downloaded in the initial page load. This model is similar to how native mobile apps work.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the extent of your experience with Promises and/or their polyfills?
+        </h3>
+        <p class="faq-text">
+          Possess working knowledge of it. A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection. <br>
+          Some common polyfills are $.deferred, Q and Bluebird but not all of them comply to the specification. ES2015 supports Promises out of the box and polyfills are typically not needed these days.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the pros and cons of using Promises instead of callbacks?
+        </h3>
+        <p class="faq-text">
+          Pros: <br>
+          Avoid callback hell which can be unreadable.<br>
+          Makes it easy to write sequential asynchronous code that is readable with .then(). <br>
+          Makes it easy to write parallel asynchronous code with Promise.all(). <br>
+          Cons: <br>
+          Slightly more complex code (debatable). <br>
+          In older browsers where ES2015 is not supported, you need to load a polyfill in order to use it.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+        </h3>
+        <p class="faq-text">
+        Advantages: <br>
+        Fixes some of the longstanding problems in JavaScript and discourages JavaScript anti-patterns.
+        Enables you to write shorter code, by providing some syntactic sugar on top of JavaScript..<br>
+        Static types are awesome (in the case of TypeScript) for large projects that need to be maintained over time.<br>
+        Disadvantages:<br>
+        Require a build/compile process as browsers only run JavaScript and your code will need to be compiled into JavaScript before being served to browsers.<br>
+        Debugging can be a pain if your source maps do not map nicely to your pre-compiled source.
+        Most developers are not familiar with these languages and will need to learn it. There’s a ramp up cost involved for your team if you use it for your projects.<br>
+        Smaller community (depends on the language), which means resources, tutorials, libraries and tooling would be harder to find.<br>
+        IDE/editor support might be lacking.<br>
+        These languages will always be behind the latest JavaScript standard.<br>
+        Developers should be cognizant of what their code is being compiled to — because that is what would actually be running, and that is what matters in the end.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What tools and techniques do you use debugging JavaScript code?
+        </h3>
+        <p class="faq-text">
+          Chrome Devtools <br>
+          debugger statement <br>
+          console.log debugging <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What language constructions do you use for iterating over object properties and array items?
+        </h3>
+        <p class="faq-text">
+          For objects: <br>
+          for loops: for (var property in obj) { console.log(property); }. However, this will also iterate through its inherited properties, and you will add an obj.hasOwnProperty(property) check before using it.<br>
+          Object.keys(): Object.keys(obj).forEach(function (property) { ... }). Object.keys() is a static method that will lists all enumerable properties of the object that you pass it.
+          Object.getOwnPropertyNames() — Object.getOwnPropertyNames(obj).forEach(function (property) { ... }). Object.getOwnPropertyNames() is a static method that will lists all enumerable and non-enumerable properties of the object that you pass it.<br>
+          For arrays:<br>
+          for loops: for (var i = 0; i < arr.length; i++). The common pitfall here is that var is in the function scope and not the block scope and most of the time you would want block scoped iterator variable. ES2015 introduces let which has block scope and it is recommended to use that instead. So this becomes: for (let i = 0; i < arr.length; i++).<br>
+          forEach: arr.forEach(function (el, index) { ... }). This construct can be more convenient at times because you do not have to use the index if all you need is the array elements. There are also the every and some methods which will allow you to terminate the iteration early.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain the difference between mutable and immutable objects.
+        </h3>
+        <p class="faq-text">
+          Mutable objects are objects whose value can change once created, while immutable objects are those whose value cannot change once created. In JavaScript numbers, strings, null, undefined and Booleans are primitive types which are immutable. Objects, arrays, functions, classes, maps, and sets are mutable.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain the difference between synchronous and asynchronous functions.
+        </h3>
+        <p class="faq-text">
+          Synchronous functions are blocking while asynchronous functions are not. In synchronous functions, statements complete before the next statement is run. In this case the program is evaluated exactly in order of the statements and execution of the program is paused if one of the statements take a very long time.<br>
+         Asynchronous functions usually accept a callback as a parameter and execution continues on the next line immediately after the asynchronous function is invoked. The callback is only invoked when the asynchronous operation is complete and the call stack is empty. Heavy duty operations such as loading data from a web server or querying a database should be done asynchronously so that the main thread can continue executing other operations instead of blocking until that long operation to complete.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is event loop? What is the difference between call stack and task queue?
+        </h3>
+        <p class="faq-text">
+           The event loop is a single-threaded loop that monitors the call stack and checks if there is any work to be done in the task queue. If the call stack is empty and there are callback functions in the task queue, a function is dequeued and pushed onto the call stack to be executed. (Elaborate Later).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
+        </h3>
+        <p class="faq-text">
+          The former is a function declaration while the latter is a function expression. The key difference is that function declarations have its body hoisted but the bodies of function expressions are not (they have the same hoisting behaviour as variables).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the differences between variables created using let, var or const?
+        </h3>
+        <p class="faq-text">
+          Variables declared using the var keyword are scoped to the function in which they are created, or if created outside of any function, to the global object. let and const are block scoped, meaning they are only accessible within the nearest set of curly braces (function, if-else block, or for-loop). var allows variables to be hoisted, meaning they can be referenced in code before they are declared. let and const will not allow this, instead throwing an error. Redeclaring a variable with var will not throw an error, but ‘let’ and ‘const’ will. let and const differ in that let allows reassigning the variable’s value while const does not.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the differences between ES6 class and ES5 function constructors?
+        </h3>
+        <p class="faq-text">
+      ES6 class basically does the work of defining a new object and appending functions to its prototype.<br>
+      ES5 Function constructors work and look the same but the main difference is observed when the developer uses the Inheritance property.<br>
+      They can be considered as the syntax base for constructor functions.<br>
+      These can only be executed with the help of a new operator.<br>
+      ES6 class allows the developers to instantiate objects using the new operator.<br>
+      ES5 function constructors focus on how the objects are instantiated.<br>
+      They also ensure the developer that this keyword which is basically used inside the class only refers to the object that is being created by the developer.<br>
+      ES5 function constructor focus on implementing the reusable object creation code. Any function can be used as a constructor.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Can you offer a use case for the new arrow => function syntax? How does this new syntax differ from other functions?
+        </h3>
+        <p class="faq-text">
+        One of the primary use cases for traditional lambda functions, and now for arrow functions in JavaScript, is for functions that get applied over and over again to items in a list. A list of arguments within parenthesis, followed by a 'fat arrow' (=>), followed by a function body.<br>
+        This is very similar to traditional functions, we just leave off the function keyword and add a fat arrow after the arguments.<br>
+        However, there are a number of ways to 'sugar' this up that make arrow functions dramatically more concise for simple functions.<br>
+        First, if the function body is a single expression, you can leave off the brackets and put it inline. The results of the expression will be returned by the function.<br>
+        Second, if there is only a single argument, you can even leave off the parenthesis around the argument.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What advantage is there for using the arrow syntax for a method in a constructor?
+        </h3>
+        <p class="faq-text">
+          These functions two major benefits - a very clean concise syntax and more intuitive scoping and this binding.<br>
+          Those benefits have sometimes led to arrow functions being strictly preferred over other forms of function declaration.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the definition of a higher-order function?
+        </h3>
+        <p class="faq-text">
+          A higher-order function is any function that takes another function as a parameter, which it uses to operate on some data, or returns a function as a result. Higher-order functions are meant to abstract some operation that is performed repeatedly. The classic example of this is map, which takes an array and a function as arguments. map then uses this function to transform each item in the array, returning a new array with the transformed data. Other popular examples in JavaScript are forEach, filter, and reduce. A higher-order function doesn’t just need to be manipulating arrays as there are many use cases for returning a function from another function.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Can you give an example for destructuring an object or an array?
+        </h3>
+        <p class="faq-text">
+          Destructuring is an expression available in ES6 which enables a succinct and convenient way to extract values of Objects or Arrays, and place them into distinct variables.<br>
+          let a, b, rest <br>
+          [a, b] = [10, 20] <br>
+          console.log(a) <br>
+          // expected output: 10 <br>
+          console.log(b) <br>
+          // expected output: 20 <br>
+          [a, b, ...rest] = [10, 20, 30, 40, 50] <br>
+          console.log(rest) <br>
+          // expected output: Array [30,40,50]
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          ES6 Template Literals offer a lot of flexibility in generating strings, can you give an example?
+        </h3>
+        <p class="faq-text">
+          let a = 5 <br>
+          let b = 10 <br>
+          console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`) <br>
+          // "Fifteen is 15 and not 20." <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Can you give an example of a curry function and why this syntax offers an advantage?
+        </h3>
+        <p class="faq-text">
+          Currying is a pattern where a function with more than one parameter is broken into multiple functions that, when called in series, will accumulate all of the required parameters one at a time. This technique can be useful for making code written in a functional style easier to read and compose. It’s important to note that for a function to be curried, it needs to start out as one function, then broken out into a sequence of functions that each take one parameter.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What are the benefits of using spread syntax and how is it different from rest syntax?
+        </h3>
+        <p class="faq-text">
+          ES6’s spread syntax is very useful when coding in a functional paradigm as we can easily create copies of arrays or objects without resorting to Object.create, slice, or a library function. This language feature gets a lot of use in projects using Redux or RX.js. ES6’s rest syntax offers a shorthand for including an arbitrary number of arguments to be passed to a function. It is like an inverse of the spread syntax, taking data and stuffing it into an array rather than upacking an array of data, and it works in function arguments, as well as in array and object destructuring assignments.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          How can you share code between files?
+        </h3>
+        <p class="faq-text">
+          Almost every language has a concept of modules: a way to include functionality declared in one file within another. Typically, a developer creates an encapsulated library of code responsible for handling related tasks. That library can be referenced by applications or other modules.<br>
+          The benefits: <br>
+          Code can be split into smaller files of self-contained functionality. <br>
+          The same modules can be shared across any number of applications. <br>
+          Ideally, modules need never be examined by another developer, because they’ve has been proven to work. <br>
+          Code referencing a module understands it’s a dependency. If the module file is changed or moved, the problem is immediately obvious. <br>
+          Module code (usually) helps eradicate naming conflicts. Function x() in module1 cannot clash with function x() in module2. Options such as namespacing are employed so calls become module1.x() and module2.x().
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Why might you want to create static class members?
+        </h3>
+        <p class="faq-text">
+          Neither static methods nor static properties can be called on instances of the class. Instead, they're called on the class itself. Static methods are often utility functions, such as functions to create or clone objects, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances. The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added. The compiler will guarantee that instances of this class cannot be created. Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class except Object.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Can you name two programming paradigms important for JavaScript app developers?
+        </h3>
+        <p class="faq-text">
+          Functional and OOP.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What is functional programming?
+        </h3>
+        <p class="faq-text">
+          The process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects. Functional programming is declarative rather than imperative, and application state flows through pure functions. Contrast with object oriented programming, where application state is usually shared and colocated with methods in objects.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the difference between classical inheritance and prototypal inheritance?
+        </h3>
+        <p class="faq-text">
+          Class Inheritance: A class is like a blueprint — a description of the object to be created. Classes inherit from classes and create subclass relationships: hierarchical class taxonomies. <br> Prototypal Inheritance: A prototype is a working object instance. Objects inherit directly from other objects. Instances may be composed from many different source objects, allowing for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. <br>In other words, class taxonomies are not an automatic side-effect of prototypal OO: a critical distinction.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the pros and cons of functional programming vs object-oriented programming?
+        </h3>
+        <p class="faq-text">
+          OOP Pros: <br>
+          Objects and methods are very readable and understandable. <br>
+          OOP utilizes an imperative style, in which code reads like a straight-forward set of instructions as a computer would read it. <br>
+          OOP Cons: <br>
+          OOP commonly depends upon shareable state. The unfortunate result of so many objects and methods existing within the same state and being accessed in an entirely undetermined order can lead the pre-discussed concept of “race conditions”. <br>
+          FP Pros: <br>
+          Utilizing pure functions, leads to reliable functions with no side effects that accomplish and return exactly what you expect them to. <br>
+          FP utilizes a more declarative style, which focuses more on what to do and less about how it’s being done. This places the emphasis on performance and optimization, leaving the door to refactor without completely reworking your code. <br>
+          FP Cons: <br>
+          Functional programming is a newer paradigm. It’s much easier to find documentation and information on the OOP approach. <br>
+          Similar to one of OOP’s strengths, functional programming can lack readability at times. Sometimes functions can become very verbose and become difficult to follow comparatively to the object-oriented style. <br>
+          You saw a simple example of this in the Person object and createPerson function we discussed earlier. <br>
+          The Conclusion: Too often do we pit paradigms, languages, and other competitive programming concepts against one another. Often times, the best approach is that of the hybrid approach. Utilize Object-Oriented Programming in moments where its strengths can best shines. Utilize Functional Programming in moments where its strengths can best shine as well.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are two-way data binding and one-way data flow, and how are they different?
+        </h3>
+        <p class="faq-text">
+          One-way data-binding means the data flows in a single direction so that whenever the data changes in a component, it also updates the view with new data. Two-way data binding means data flows in both directions, it means any change happens in the view updates the data and any change happens in the data updates the view. (Elaborate Later).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is asynchronous programming, and why is it important in JavaScript?
+        </h3>
+        <p class="faq-text">
+          Asynchronous programming makes it possible to express waiting for long-running actions without freezing the program during these actions. JavaScript environments typically implement this style of programming using callbacks, functions that are called when the actions complete. An event loop schedules such callbacks to be called when appropriate, one after the other, so that their execution does not overlap. <br>
+          Programming asynchronously is made easier by promises, objects that represent actions that might complete in the future, and async functions, which allow you to write an asynchronous program as if it were synchronous.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is Node.js? Where can you use it?
+        </h3>
+        <p class="faq-text">
+          Node.js is an open-source, Javascript runtime environment on Chrome’s V8 that lets you effortlessly develop fast and scalable web applications. It utilizes an event-driven, non-blocking I/O model that makes it lightweight, efficient and excellent for data-intensive real-time applications that run across shared devices. Node.js is an epitome of an exceptionally customizable and scalable tech. The server engine utilizes an event-based, non-blocking I/O model. This makes the adaptation of Javascript easier to the machine language providing execution of the code super fast. Thanks to Javascript and Node.js, the code operates faster in server-to-client direction. This enhances the performance ability of the web applications to the next level. To be more precise, web application development in Node.js ensures a steady and secure non-blocking I/O model, simplifying the code beautifully. Node.js runs over Google’s  V8 Javascript engine, where web applications are event-based in an asynchronous manner.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Why use Node.js?
+        </h3>
+        <p class="faq-text">
+          Backend for Social Media Networking<br>
+          Single-page Application<br>
+          Chat Application<br>
+          Data Streaming<br>
+          IoT Application<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the features of Node.js?
+        </h3>
+        <p class="faq-text">
+          Scalability:<br>
+          Node.js applications are easily scalable, vertically and horizontal. While vertical scaling lets you add more resources to the current nodes, horizontal scaling enables you to add new nodes quicker. Furthermore, Node.js applications do not require a large block in the entire development process, for it works along with a set of microservices and modules. It’s as simple, easy, and fits perfectly for startups that are looking to grow.<br>
+          High Performance:<br>
+          Node.js runs on Google V8 JS engine that complies with Javascript code directly into the machine code. This makes it resource efficient as well as accelerates the framework’s speed. In fact, Google themselves invest heavily in their search engine to consistently improve their performance.<br>
+          Large Community Support:<br>
+          Established in 2015, Node.js Foundation is an impressive group of founders from leading enterprises such as IBM, Microsoft, Fidelity, and SAP. An enormous number of software developers and many active Node.js fans are constantly contributing to the ever-evolving and nurturing Node.js community to support the fellow developers. Additionally, Node.js is supported on Github which makes it super easy and fast to develop and support the framework.<br>
+          Boosts Development Speed:<br>
+          Node.js allows you developers to accelerate the web app development process with its lightweight and varied tools. The npm registry offers numerous solutions, modules, and libraries to create web apps by acquiring more value and investing in a lesser effort. Node.js, along with npm libraries, helps you reduce bugs and decrease the size of your web application with its reusable templates. This optimization directly influences the time to market.<br>
+          Freedom to Develop Apps:<br>
+          Developers working with Node.js get the freedom to develop cross-platform apps. With frameworks like Electron and NW.js, you can create cross-platform web apps with Node.js since it’s compatible with desktop, mobile, and web development for Mac, Windows, and Linux. Node.js is now widely the chosen one for IoT solutions as well. So if you are looking to enhance your team’s coding efficiency and performance, Node.js is your best bet.<br>
+          Single Programming Language:<br>
+          Node.js offers a cocktail of similar languages on front-end and back-end Javascript. It is actually more accessible and flexible than it sounds. It makes the entire web app development cycle robust and seamless for developers and enterprises. It saves time, energy, and resources man-hours investment more productive and profitable. Not only does Node.js make web app development convenient, but it also makes it the most preferred tech in the market today.<br>
+          Contribution to Fullstack & MEANstack:<br>
+          Node.js has proven its potential and is a part of a robust tech stack with Javascript being the undisputed leader amongst leading programming languages. Node.js, as a stand-alone, brings many benefits to the tech stack; for instance, it offers the JSON module library. With more than 368,985,988 downloads i.e an average of 1,010,921 per day, Node.js has become a significant player in many tech ecosystems.<br>
+          Rich Ecosystem:<br>
+          When it comes to the simplicity and richness of Node.js, npm is the only word that comes to your mind. Did you know? npm has 836,000 libraries, and 10,000 or more are published every week. Yes! over 475,000 packages and registries are available and 11,000 new tools weekly. It is reducing a great deal of time and cost involved in the development and time-to-market.
+
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How do you update NPM to a new version in Node.js?
+        </h3>
+        <p class="faq-text">
+          For a Windows solution, just go to the Node.js site, click the download button on the homepage and execute the installer program.<br>
+          Thankfully it took care of everything and with a few clicks of 'Next' button I got the latest Node.js version.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Why is Node.js Single-threaded?
+        </h3>
+        <p class="faq-text">
+          It's all about asynchronous operations. If you make a synchronous call which is CPU intensive it will block the thread. Therefore you use an asynchronous function. This function will be triggered and the thread goes right to the next request while the CPU intensive function is executed without blocking.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain callback in Node.js.
+        </h3>
+        <p class="faq-text">
+          A callback is a function called at the completion of a given task; this prevents any blocking, and allows other code to be run in the meantime.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is callback hell in Node.js?
+        </h3>
+        <p class="faq-text">
+          This is a big issue caused by coding with complex nested callbacks. Here, each and every callback takes an argument that is a result of the previous callbacks. In this manner, The code structure looks like a pyramid, making it difficult to read and maintain. Also, if there is an error in one function, then all other functions get affected.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How do you prevent/fix callback hell?
+        </h3>
+        <p class="faq-text">
+          JavaScript provides an easy way of escaping from a callback hell. This is done by event queue and promises.<br>
+          A promise is a returned object from any asynchronous function, to which callback methods can be added based on the previous function’s result.<br>
+          Promises use .then() method to call async callbacks. We can chain as many callbacks as we want and the order is also strictly maintained.<br>
+          Promises use .fetch() method to fetch an object from the network. It also uses .catch() method to catch any exception when any block fails.<br>
+          So these promises are put in event queue so that they don’t block subsequent JS code. Also once the results are returned, the event queue finishes its operations.<br>
+          There are also other helpful keywords and methods like async, wait, settimeout() to simplify and make better use of callbacks.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain the role of REPL in Node.js.
+        </h3>
+        <p class="faq-text">
+          The Node.js Read-Eval-Print-Loop (REPL) is an interactive shell that processes Node.js expressions. The shell reads JavaScript code the user enters, evaluates the result of interpreting the line of code, prints the result to the user, and loops until the user signals to quit.<br>
+          The REPL is bundled with with every Node.js installation and allows you to quickly test and explore JavaScript code within the Node environment without having to store it in a file.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Name the types of API functions in Node.js.
+        </h3>
+        <p class="faq-text">
+          Asynchronous <br>
+          Non-blocking functions <br>
+          Synchronous <br>
+          Blocking functions <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are the functionalities of NPM in Node.js?
+        </h3>
+        <p class="faq-text">
+          npm is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management. A plethora of Node.js libraries and applications are published on npm, and many more are added every day. These applications can be searched for on https://www.npmjs.com/. Once you have a package you want to install, it can be installed with a single command-line command.<br>
+          Let's say you're hard at work one day, developing the Next Great Application. You come across a problem, and you decide that it's time to use that cool library you keep hearing about - let's use Caolan McMahon's async as an example. Thankfully, npm is very simple to use: you only have to run npm install async, and the specified module will be installed in the current directory under ./node_modules/. Once installed to your node_modules folder, you'll be able to use require() on them just like they were built-ins.<br>
+          Let's look at an example of a global install - let's say coffee-script. The npm command is simple: npm install coffee-script -g. This will typically install the program and put a symlink to it in /usr/local/bin/. This will then allow you to run the program from the console just like any other CLI tool. In this case, running coffee will now allow you to use the coffee-script REPL. <br>
+          Another important use for npm is dependency management. When you have a node project with a package.json file, you can run npm install from the project root and npm will install all the dependencies listed in the package.json. This makes installing a Node.js project from a git repo much easier!
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the difference between Node.js and Ajax?
+        </h3>
+        <p class="faq-text">
+          The only similarity between AJAX and Node.js is that they are both JavaScript; yet they both serve completely different purposes. <br>
+          AJAX (short for Asynchronous Javascript and XML) is a client-side technology, often used for updating the contents of a page without refreshing it. Such use can be seen just about everywhere; from Facebook, even to Stack Overflow.<br>
+          Node.js is server-side JavaScript, used for developing server software. For example, you wouldn't want to develop a database system in client-side JS (since, well, anyone could access the database's credentials obviously), but such a task is possible with Node.js. Node.js doesn't get executed in a browser, but by a server - it's uses are very comparable to Apache/PHP, Ruby on Rails, Django, and the like. <br>
+          The difference between Node.js and Ajax is that, Ajax (short for Asynchronous JavaScript and XML) is a client side technology, often used for updating the contents of the page without refreshing it. While, Node.js is Server Side JavaScript, used for developing server software. Node.js does not execute in the browser but by the server.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are “streams” in Node.js? Explain the different types of streams present in Node.js.
+        </h3>
+        <p class="faq-text">
+          Streams are a way to handle reading/writing files, network communications, or any kind of end-to-end information exchange in an efficient way.<br>
+          What makes streams unique, is that instead of a program reading a file into memory all at once like in the traditional way, streams read chunks of data piece by piece, processing its content without keeping it all in memory. <br>
+          Writable: streams to which we can write data. For example, fs.createWriteStream() lets us write data to a file using streams. <br>
+          Readable: streams from which data can be read. For example: fs.createReadStream() lets us read the contents of a file.<br>
+          Duplex: streams that are both Readable and Writable. For example, net.Socket <br>
+          Transform: streams that can modify or transform the data as it is written and read. For example, in the instance of file-compression, you can write compressed data and read decompressed data to and from a file.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Explain chaining in Node.js.
+        </h3>
+        <p class="faq-text">
+          There are two most commonly used methods for chaining functions provided by the async module:
+          parallel(tasks, callback): The tasks is a collection of functions that runs parallel in practice through I/O switching. If any function in the collection tasks returns an error, the callback function is fired. Once all the functions are completed, the data is passed to the callback function as an array. The callback function is optional. <br>
+          series(tasks, callback): Each function in tasks run only after the previous function is completed. If any of the functions throw an error, the subsequent functions are not executed and the callback is fired with an error value. On completion of tasks, the data is passed into the callback function as an array.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are Globals in Node.js?
+        </h3>
+        <p class="faq-text">
+          Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings and object itself.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is Event-driven programming?
+        </h3>
+        <p class="faq-text">
+          Event-driven programming serves the user with the quickest and most accurate responses and this usually translates into better user experience and business gains. Also the whole focus of software development is on the actual people using the app and their actions, so it will produce better and more intuitive products for the end-users.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is Event loop in Node.js work? And How does it work?
+        </h3>
+        <p class="faq-text">
+          The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible. <br>
+          Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background. When one of these operations completes, the kernel tells Node.js so that the appropriate callback may be added to the poll queue to eventually be executed. <br>
+          When Node.js starts, it initializes the event loop, processes the provided input script (or drops into the REPL, which is not covered in this document) which may make async API calls, schedule timers, or call process.nextTick(), then begins processing the event loop.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the purpose of module.exports in Node.js?
+        </h3>
+        <p class="faq-text">
+          Module exports are the instruction that tells Node.js which bits of code (functions, objects, strings, etc.) to “export” from a given file so other files are allowed to access the exported code. The module’s object is simply an argument—an object, in this case—to our module that we can manipulate as we please. Module.exports is simply an object that you assign properties to, and that object gets passed to your requiring file. Be sure to define your exports synchronously.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is the difference between Asynchronous and Non-blocking?
+        </h3>
+        <p class="faq-text">
+          Asynchronous: The term itself defines that it is not synchronous. The architecture of asynchronous explains that the message sent will not give the reply on immediate basis just like we send the mail but do not get the reply on an immediate basis. It does not have any dependency or order. Hence improving the system efficiency and performance. The server stores the information and when the action is done it will be notified. <br>
+          Non-Blocking: Nonblocking immediately responds with whatever data is available. Moreover, it does not block any execution and keeps on running as per the requests. If an answer could not be retrieved than in those cases API returns immediately with an error. Nonblocking is mostly used with I/O(input/output). Node.js is itself based on nonblocking I/O model. There are few ways of communication that a nonblocking I/O has completed. The callback function is to be called when the operation is completed. Nonblocking call uses the help of javascript which provides a callback function. You can point out the differences with these definitions of asynchronous and nonblocking. But few major differences are: <br> 1. Asynchronous does not respond immediately, while Nonblocking responds immediately if the data is available and if not that simply returns an error. <br> 2. Asynchronous improves the efficiency by doing the task fast as the response might come later, meanwhile, can do complete other tasks. Nonblocking does not block any execution and if the data is available it retrieves the information quickly. <br> 3. Asynchronous is the opposite of synchronous while nonblocking I/O is the opposite of blocking. They both are fairly similar but they are also different as asynchronous is used with a broader range of operations while nonblocking is mostly used with I/O.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is Tracing in Node.js?
+        </h3>
+        <p class="faq-text">
+          Node.JS tracing is a module that assists in identifying and execution of the node application pattern. This helps you to monitor the application and location of data both on the function and system level. Tracing offers a mechanism where information generated by V8, Userspace code and Node core can be traced at a central point.<br>
+          Tracing is able to monitor your node applications by closely following JavaScript entry and exit points thereby, recording time that has passed to each function. You may not notice the effect of tracing during the first time but, afterward one can clearly tell its effects. It is possible to activate trace on a running Node.JS application or before the application has been started.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        How will you debug an application in Node.js?
+        </h3>
+        <p class="faq-text">
+          By running console.group, you create a new collection of JavaScript console logs. In the browser, this would nest all your logs together.Console.table does what you’d expect it to: it takes an array or an object and outputs an ASCII table. This is particularly useful for long or large objects with many properties. <br> Console.dir The first takes an object; the second takes an object of options. In this options object, you can specify the depth of your console log. <br> Debug in Chrome with inspect flag: you pass a flag to your node process before you start the Node application. This tells Node.js that you want to run in debugging mode. Node.js will then start a WebSocket connection that will allow you to remote debug from your browser. <br> IDE: These IDE tools work in much the same way as before. You’ll need to attach an inspector to your node process and then listen on the WebSocket that is created for your debugging purposes. To debug memory leaks, repeat the inspect step from tip four to open up Chrome. Once it’s opened, you will see a memory tab. This allows you to profile your memory usage within your Node.js application and find those leaks.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Difference between setImmediate() vs setTimeout()?
+        </h3>
+        <p class="faq-text">
+          setImmediate() is similar in this regard except that it doesn't use queue of functions. It checks queue of I/O eventhandlers. If all I/O events in the current snapshot are processed, it executes the callback. It queues them immediately after the last I/O handler somewhat like process.nextTick. So it is faster. <br>
+          setTimeout() is simply like calling the function after delay has finished. Whenever a function is called it is not executed immediately, but queued so that it is executed after all the executing and currently queued eventhandlers finish first. setTimeout(,0) essentially means execute after all current functions in the present queue get executed. No guarantees can be made about how long it could take.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is process.nextTick()
+        </h3>
+        <p class="faq-text">
+          When we pass a function to process.nextTick(), we instruct the engine to invoke this function at the end of the current operation, before the next event loop tick starts: The event loop is busy processing the current function code.
+          When this operation ends, the JS engine runs all the functions passed to nextTick() calls during that operation.
+          It's the way we can tell the JS engine to process a function asynchronously (after the current function), but as soon as possible, not queue it.
+          Calling setTimeout(() => {}, 0) will execute the function at the end of next tick, much later than when using nextTick() which prioritizes the call and executes it just before the beginning of the next tick.
+          Use nextTick() when you want to make sure that in the next event loop iteration that code is already executed.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is package.json? What is it used for?
+        </h3>
+        <p class="faq-text">
+          All npm packages contain a file, usually in the project root, called package.json - this file holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. It can also contain other metadata such as a project description, the version of the project in a particular distribution, license information, even configuration data - all of which can be vital to both npm and to the end users of the package. The package.json file is normally located at the root directory of a Node.js project. As you can see, there are fields for the description and keywords of your projects. This allows people who find your project understand what it is in just a few words. The author, contributors, homepage and repository fields can all be used to credit the people who contributed to the project, show how to contact the author/maintainer, and give links for additional references. <br>
+          The file listed in the main field is the main entry point for the library; when someone runs require(library name), require resolves this call to require(package.json:main).<br>
+          Finally, the dependencies field is used to list all the dependencies of your project that are available on npm. When someone installs your project through npm, all the dependencies listed will be installed as well. Additionally, if someone runs npm install in the root directory of your project, it will install all the dependencies to ./node_modules.<br>
+          It is also possible to add a devDependencies field to your package.json - these are dependencies not required for normal operation, but required/recommended if you want to patch or modify the project. If you built your unit tests using a testing framework, for example, it would be appropriate to put the testing framework you used in your devDependencies field. To install a project's devDependencies, simply pass the --dev option when you use npm install.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is LibUV?
+        </h3>
+        <p class="faq-text">
+          LibUV is the core engine that powers Nodejs. LibUV provides support for asynchronous I/O operations. It’s a C based library primarily created for Nodejs and used by Luvit, Julia, pyuv, and some other software.
+          LibUV enforces an asynchronous, event-driven style of programming. It uses event loops to handle asynchronous tasks effectively. It also supports non-blocking network support, asynchronous file system access, etc.
+          By “event-driven” programming, we mean it watches for events to occur and then handle them when they occur. The monitoring of events happening in the system is managed by LibUV using something that we call Event Loop. This Event Loop usually keeps running forever.
+          The responsibilities of LibUV are cross-platform input-output operations, handling files & networks, and support the event loop.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are some of the most popular modules of Node.js?
+        </h3>
+        <p class="faq-text">
+          GraphicsMagick and ImageMagick are two popular tools for creating, editing, composing and converting images. Sharp is based on the ultra-fast libvips image processing library, and claims to be four to five times faster than ImageMagick or GraphicsMagick when it comes to compressing and resizing images. Sprite sheets are bitmap files that contain many different small images (for example icons), and they are often used to reduce the overhead of downloading images and speed up overall page load. A module that can help you here is validator.js. It provides several methods for validating strings, from isEmail() and isURL() to isMobilePhone() or isCreditCard(), plus you can use it on the server- and the client-side.<br> PDFKit supports embedding font types, embedding images and the definition of vector graphics, either programmatically (using a Canvas-like API) or by specifying SVG paths. <br> Cheerio is the answer. Although it implements only a subset of the core jQuery library, it makes processing HTML on the server side much easier. It is built on top of the htmlparser2 module, an HTML, XML and RSS parser. Plus, according to benchmarks, it's eight times faster than jsdom, another module for working with the DOM on the server side. <br> The CSV (comma-separated values) format is often used when interchanging table-based data. For example, Microsoft Excel allows you to export or import your data in that format. node-cvg simplifies the process of working with CSV data in JavaScript, and provides functionalities for generating, parsing, transforming and stringifying CSV. It comes with a callback API, a stream API and a synchronous API, so you can choose the style you prefer. <br> Markdown is a popular format when creating content for the web. If you ever wanted to process markdown content programmatically (i.e. write your own markdown editor), marked is worth a look. It takes a string of markdown code as input and outputs the appropriate HTML code. It is even possible to further customise that HTML output by providing custom renderers.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is EventEmitter in Node.js?
+        </h3>
+        <p class="faq-text">
+          Event emitters are objects in Node.js that trigger an event by sending a message to signal that an action was completed. JavaScript developers can write code that listens to events from an event emitter, allowing them to execute functions every time those events are triggered. In this context, events are composed of an identifying string and any data that needs to be passed to the listeners.<br>
+          Typically in Node.js, when we want to have an action occur upon completion of another action, we use asynchronous programming techniques like nesting callbacks or chaining promises. However, these techniques tightly couple the triggering action and the resulting action, making it difficult to modify the resulting action in the future. Event emitters provide a different way to structure this relationship: the publish-subscribe pattern. In this software architecture pattern, a publisher (the event emitter) sends a message (an event), and a subscriber receives the event and performs an action. The power of this pattern is that the publisher does not need to know about the subscribers. A publisher publishes a message, and it’s up to the subscribers to react to it in their respective ways. If we wanted to change the behavior of our application, we could adjust how the subscribers react to the events without having to change the publisher.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is recursion and give an example using javascript?
+        </h3>
+        <p class="faq-text">
+          A recursive function is a function that calls itself until it doesn’t. And this technique is called recursion. <br>
+          Suppose that you have a function called recurse(). A recursive function always has a condition to stop calling itself, otherwise, it will call itself indefinitely. Generally, recursive functions are used to break down a big problem into smaller ones. You can find that they are heavily used in the data structures like binary trees and graphs and algorithms such as binary search and quicksort. <br>
+          function countDownFrom(number) { <br>
+           if (number === 0) { <br>
+             return <br>
+           } <br>
+
+             console.log(number) <br>
+             countDownFrom(number - 1)<br>
+          }<br>
+
+          countDownFrom(5)<br>
+          The recursive version doesn't need extra variables to track its progress. Notice how the pile of functions (call stack) grows as we recurse? <br>
+          That's because each call to countDownFrom adds to the stack, feeding it number - 1. By doing this we're passing along an updated number each time. No extra state needed! <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are types?
+        </h3>
+        <p class="faq-text">
+          A type defines a set of possible values and a set of operations (for an object).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What are data structures?
+        </h3>
+        <p class="faq-text">
+          Data structures are the way we are able to store and retrieve data. You may already be familiar with Python lists and dictionaries, or Javascript arrays and objects. If so, you know that lists and arrays are sequential with data accessed by index while dictionaries and objects use a named key to store and retrieve information.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is an algorithm?
+        </h3>
+        <p class="faq-text">
+          An algorithm is a specific procedure for solving a well-defined computational problem. The development and analysis of algorithms is fundamental to all aspects of computer science: artificial intelligence, databases, graphics, networking, operating systems, security, and so on. Algorithm development is more than just programming. It requires an understanding of the alternatives available for solving a computational problem, including the hardware, networking, programming language, and performance constraints that accompany any particular solution. It also requires understanding what it means for an algorithm to be “correct” in the sense that it fully and efficiently solves the problem at hand.<br>
+          An accompanying notion is the design of a particular data structure that enables an algorithm to run efficiently. The importance of data structures stems from the fact that the main memory of a computer (where the data is stored) is linear, consisting of a sequence of memory cells that are serially numbered 0, 1, 2,…. Thus, the simplest data structure is a linear array, in which adjacent elements are numbered with consecutive integer “indexes” and an element’s value is accessed by its unique index.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is scope / lexical scope in javascript?
+        </h3>
+        <p class="faq-text">
+          Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global: Global variables are those declared outside of a block. Local variables are those declared inside of a block.  JavaScript has lexical scoping with function scope. In other words, even though JavaScript looks like it should have block scope because it uses curly braces { }, a new scope is created only when you create a new function. A lexical scope in JavaScript means that a variable defined outside a function can be accessible inside another function defined after the variable declaration. But the opposite is not true; the variables defined inside a function will not be accessible outside that function.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is polymorphism?
+        </h3>
+        <p class="faq-text">
+          Polymorphism in Object-Oriented Programming is an ability to create a property, a function, or an object that has more than one realization. <br>
+          Polymorphism is an ability to substitute classes that have common functionality in sense of methods and data. In other words, it is an ability of multiple object types to implement the same functionality that can work in a different way but supports a common interface.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is encapsulation?
+        </h3>
+        <p class="faq-text">
+          Encapsulation is the bundling of data and the methods that act on that data such that access to that data is restricted from outside the bundle, or as Alan Kay describes it, “local retention and protection and hiding of state-process.” In OOP, that means that an object stores its state privately, and only the object’s methods have access to change it. <br>
+          If you want to change encapsulated state, you don’t reach out and directly mutate some object’s props. Instead, you call a method on the object, and maybe the object will respond by updating its state.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Linked List?
+        </h3>
+        <p class="faq-text">
+          A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. A linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Doubly Linked List?
+        </h3>
+        <p class="faq-text">
+          A doubly linked list is a data structure where a set of sequential links of records called nodes exist. Unlike the singly linked list, a node of a doubly linked list consists of three fields: two link fields and one information field. Two link fields provide information about the address of previous nodes and the next nodes in the sequence and one data field. <br>
+          The link fields are also known as “previous” and “next” pointers and store the addresses of the previous and next nodes in the list. And the previous pointer of the very first node, as well as the next pointer of the last node points to a Null value or called a sentinel node. <br> Where struct keyword refers to a structure, node is the name of the structure, data is the information field which contains only integer values, *next is the pointer of type structure which holds the address of the next node in the sequential list, and *prev is the pointer of the type structure and hold the address of the previous node in the sequential list.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Queue?
+        </h3>
+        <p class="faq-text">
+          Queue data structure: <br>
+        A queue is an ordered list of elements where an element is inserted at the end of the queue and is removed from the front of the queue. Unlike a stack, which works based on the last-in, first-out (LIFO) principle, a queue works based on the first-in, first-out (FIFO) principle.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Stack?
+        </h3>
+        <p class="faq-text">
+          What is a Stack? Stack is a very useful data structure and has a wide range of application. Stack is a linear data structure in which addition or removal of element follows a particular order i.e. LIFO(Last in First Out) AND FILO(First in Last Out).
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Hash Table?
+        </h3>
+        <p class="faq-text">
+          Hashing is a technique that is used to uniquely identify a specific object from a group of similar objects.<br>
+          In hashing, large keys are converted into small keys by using hash functions. The values are then stored in a data structure called hash table. The idea of hashing is to distribute entries (key/value pairs) uniformly across an array. Each element is assigned a key (converted key). By using that key you can access the element in O(1) time. Using the key, the algorithm (hash function) computes an index that suggests where an entry can be found or inserted.<br>
+          Hashing is implemented in two steps:<br>
+          An element is converted into an integer by using a hash function. This element can be used as an index to store the original element, which falls into the hash table.<br>
+          The element is stored in the hash table where it can be quickly retrieved using hashed key.<br>
+          hash = hashfunc(key)<br>
+          index = hash % array_size<br>
+          In this method, the hash is independent of the array size and it is then reduced to an index (a number between 0 and array_size − 1) by using the modulo operator (%).<br>
+          Hash function:<br>
+          A hash function is any function that can be used to map a data set of an arbitrary size to a data set of a fixed size, which falls into the hash table. The values returned by a hash function are called hash values, hash codes, hash sums, or simply hashes.<br>
+          To achieve a good hashing mechanism, It is important to have a good hash function with the following basic requirements:<br>
+          Easy to compute: It should be easy to compute and must not become an algorithm in itself.
+          Uniform distribution: It should provide a uniform distribution across the hash table and should not result in clustering.<br>
+          Less collisions: Collisions occur when pairs of elements are mapped to the same hash value. These should be avoided.<br>
+          Note: Irrespective of how good a hash function is, collisions are bound to occur. Therefore, to maintain the performance of a hash table, it is important to manage collisions through various collision resolution techniques.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Heap?
+        </h3>
+        <p class="faq-text">
+          A Heap is a special Tree-based data structure in which the tree is a complete binary tree. Generally, Heaps can be of two types:<br>
+          Max-Heap: In a Max-Heap the key present at the root node must be greatest among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.<br>
+          Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Trie?
+        </h3>
+        <p class="faq-text">
+          Trie is an efficient information reTrieval data structure. Using Trie, search complexities can be brought to optimal limit (key length). If we store keys in binary search tree, a well balanced BST will need time proportional to M * log N, where M is maximum string length and N is number of keys in tree. Using Trie, we can search the key in O(M) time.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Tree?
+        </h3>
+        <p class="faq-text">
+          A general tree is a tree where each node may have zero or more children (a binary tree is a specialized case of a general tree). General trees are used to model applications such as file systems.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Binary Search Tree?
+        </h3>
+        <p class="faq-text">
+          Binary Search Tree is a node-based binary tree data structure which has the following properties:<br>
+          The left subtree of a node contains only nodes with keys lesser than the node’s key.<br>
+          The right subtree of a node contains only nodes with keys greater than the node’s key.<br>
+          The left and right subtree each must also be a binary search tree.<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Disjoint Set?
+        </h3>
+        <p class="faq-text">
+          A disjoint-set data structure is a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. A union-find algorithm is an algorithm that performs two useful operations on such a data structure: <br>
+         Find: Determine which subset a particular element is in. This can be used for determining if two elements are in the same subset. <br>
+         Union: Join two subsets into a single subset. <br>
+         Union-Find Algorithm can be used to check whether an undirected graph contains cycle or not. Note that we have discussed an algorithm to detect cycle. This is another method based on Union-Find. This method assumes that the graph doesn’t contain any self-loops.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        What is a Bloom Filter?
+        </h3>
+        <p class="faq-text">
+          A Bloom filter is a data structure designed to tell you, rapidly and memory-efficiently, whether an element is present in a set. The price paid for this efficiency is that a Bloom filter is a probabilistic data structure: it tells us that the element either definitely is not in the set or may be in the set.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Demonstrate Bubble Sort and explain when you might use it?
+        </h3>
+        <p class="faq-text">
+          Bubble sort is an internal exchange sort. It is considered one of the simplest methods to sort an array of objects.  It is also known as a sinking sort (because the smallest items "sink" to the bottom of the array).<br>
+          Instead of searching an array as a whole, the bubble sort works by comparing adjacent pairs of objects in the array.  If the objects are not in the correct ordered, they are swapped so that the largest of the two moves up.  This process continues until the largest of the objects, eventually "bubbles" up to the highest position in the array.  After this occurs, the search for the  next largest object begins.  The swapping continues until the whole array is in the correct order. A program needed a set of sprites sorted in depth order each frame. The spites order wouldn't change much between frames, so as an optimisation they were bubble sorted with a single pass each frame. This was done in both directions (top to bottom and bottom to top). So the sprites were always almost sorted with a very efficient O(N) algorithm.<br>
+          First Pass:<br>
+          ( 5 1 4 2 8 ) –> ( 1 5 4 2 8 )<br> Here, algorithm compares the first two elements, and swaps since 5 > 1.<br>
+          ( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 ), Swap since 5 > 4<br>
+          ( 1 4 5 2 8 ) –>  ( 1 4 2 5 8 ), Swap since 5 > 2<br>
+          ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ) <br> Now, since these elements are already in order (8 > 5), algorithm does not swap them.<br>
+          Second Pass:<br>
+          ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )<br>
+          ( 1 4 2 5 8 ) –> ( 1 2 4 5 8 ), Swap since 4 > 2<br>
+          ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+          ( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )<br>
+          Now, the array is already sorted, but our algorithm does not know if it is completed. The algorithm needs one whole pass without any swap to know it is sorted.<br>
+          Third Pass:<br>
+          ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+          ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+          ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+          ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Demonstrate Insertion Sort and explain when you might use it?
+        </h3>
+        <p class="faq-text">
+          Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part. Insertion sort has a fast best-case running time and is a good sorting algorithm to use if the input list is already mostly sorted. For larger or more unordered lists, an algorithm with a faster worst and average-case running time, such as mergesort, would be a better choice.<br>
+          An Example: <br>
+          12, 11, 13, 5, 6<br>
+          Let us loop for i = 1 (second element of the array) to 4 (last element of the array)
+          i = 1. Since 11 is smaller than 12, move 12 and insert 11 before 12<br>
+          11, 12, 13, 5, 6<br>
+          i = 2. 13 will remain at its position as all elements in A[0..I-1] are smaller than 13<br>
+          11, 12, 13, 5, 6<br>
+          i = 3. 5 will move to the beginning and all other elements from 11 to 13 will move one position ahead of their current position.<br>
+          5, 11, 12, 13, 6<br>
+          i = 4. 6 will move to position after 5, and elements from 11 to 13 will move one position ahead of their current position.<br>
+          5, 6, 11, 12, 13<br>
+
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Demonstrate Merge Sort and explain when you might use it?
+        </h3>
+        <p class="faq-text">
+          Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. Merge Sort is useful for sorting linked lists. Merge Sort is a stable sort which means that the same element in an array maintain their original positions with respect to each other. Overall time complexity of Merge sort is O(nLogn). It is more efficient as it is in worst case also the runtime is <br> O(nlogn) <br>
+          MergeSort(arr[], l,  r)<br>
+          If r > l<br>
+          1. Find the middle point to divide the array into two halves:<br>
+             middle m = l+ (r-l)/2<br>
+          2. Call mergeSort for first half:<br>
+             Call mergeSort(arr, l, m)<br>
+          3. Call mergeSort for second half:<br>
+             Call mergeSort(arr, m+1, r)<br>
+          4. Merge the two halves sorted in step 2 and 3:<br>
+             Call merge(arr, l, m, r)<br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Demonstrate Quicksort and explain when you might use it?
+        </h3>
+        <p class="faq-text">
+          QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways. </br>
+          Always pick first element as pivot. </br>
+          Always pick last element as pivot (implemented below) </br>
+          Pick a random element as pivot. </br>
+          Pick median as pivot. </br>
+          The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time. </br>
+          Pseudo Code for recursive QuickSort function : </br>
+          /* low  --> Starting index,  high  --> Ending index */ </br>
+          quickSort(arr[], low, high) </br>
+          { </br>
+              if (low < high){ </br>
+                  /* pi is partitioning index, arr[pi] is now </br>
+                     at right place */ </br>
+                  pi = partition(arr, low, high) </br>
+
+                  quickSort(arr, low, pi - 1) // Before pi </br>
+                  quickSort(arr, pi + 1, high)// After pi </br>
+              } </br>
+          } </br>
+          The way that quicksort uses divide-and-conquer is a little different from how merge sort does. In merge sort, the divide step does hardly anything, and all the real work happens in the combine step. Quicksort is the opposite: all the real work happens in the divide step. In fact, the combine step in quicksort does absolutely nothing. </br>
+          Quicksort has a couple of other differences from merge sort. Quicksort works in place. And its worst-case running time is as bad as selection sort's and insertion sort's: <br>
+          \Theta(n^2) </br>
+          Θ(n2)\Theta, left parenthesis, n, squared, right parenthesis. But its average-case running time is as good as merge sort's: </br>
+          \Theta(n \log_2 n) Θ(nlog 2n) \Theta, left parenthesis, n, log, start base, 2, end base, n, right parenthesis. <br>
+          So why think about quicksort when merge sort is at least as good? That's because the constant factor hidden in the big-Θ notation for quicksort is quite good. In practice, quicksort outperforms merge sort, and it significantly outperforms selection sort and insertion sort. </br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+        Resources
+        </h3>
+        <p class="faq-text">
+          MDN <br>
+          GeeksforGeeks <br>
+          Developer's Life <br>
+          Stack Overflow <br>
+          FreeCodeCamp <br>
+          Khan Academy <br>
+          Javascript.info <br>
+          Eloquent JS <br>
+          Nodejs.org <br>
+          The Medium <br>
+          Google <br>
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
